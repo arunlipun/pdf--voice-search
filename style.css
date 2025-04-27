@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #11dde8;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+.controls {
+    margin: 10px 0;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.sidebar {
+    width: 20%;
+    height: 600px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.pdf-viewer {
+    width: 75%;
+    height: 600px;
+    overflow-y: auto;
+    border: 1px solid black;
+    margin-left: 20px;
+    background-color: white;
+}
+
+canvas {
+    display: block;
+    margin: 10px auto;
+    background-color: white;
+}
+
+.highlight {
+    background: rgb(154, 234, 7);
+}
+
+.controls {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+}
+
+.controls button,
+.controls input[type="text"] {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient background */
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.4s ease;
+}
+
+.controls input[type="text"] {
+    background: #ffffff;
+    color: #333;
+    border: 2px solid #6a11cb;
+    width: 220px;
+    font-weight: normal;
+}
+
+.controls button:hover {
+    background: linear-gradient(45deg, #2575fc, #6a11cb); /* Reverse the gradient on hover */
+    transform: scale(1.07);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.3);
+}
+
+.controls input[type="text"]:hover {
+    border-color: #2575fc;
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:active {
+    background: linear-gradient(45deg, #ff512f, #dd2476); /* New color when clicked */
+    transform: scale(0.95);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.controls input[type="text"]:focus {
+    outline: none;
+    border-color: #2575fc;
+    box-shadow: 0 0 12px #6a11cb;
+}
